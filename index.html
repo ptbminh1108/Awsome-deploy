@@ -1,23 +1,15 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Math Fun Adventure - Kids Math Game</title>
-    <meta
-      name="description"
-      content="Fun math game for kids aged 6-10 with colorful design and engaging gameplay"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Nunito:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <meta name="description" content="Fun math game for kids aged 6-10 with colorful design and engaging gameplay" />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script type="module" crossorigin src="/assets/index-D37n1_Ad.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-BTClgKc7.css" />
+    <link rel="stylesheet" crossorigin href="/assets/index-BTClgKc7.css">
   </head>
   <body>
     <!-- Background Elements -->
@@ -34,22 +26,10 @@
       <header class="text-center py-4">
         <nav class="navbar navbar-expand-lg">
           <div class="container">
-            <h1 class="navbar-brand game-title mb-0">
-              🎮 Math Fun Adventure 🎮
-            </h1>
+            <h1 class="navbar-brand game-title mb-0">🎮 Math Fun Adventure 🎮</h1>
             <div class="navbar-nav ms-auto">
-              <button
-                class="btn btn-outline-primary me-2"
-                onclick="showInstructions()"
-              >
-                📚 How to Play
-              </button>
-              <button
-                class="btn btn-outline-success"
-                onclick="showLeaderboard()"
-              >
-                🏆 Leaderboard
-              </button>
+              <button class="btn btn-outline-primary me-2" onclick="showInstructions()">📚 How to Play</button>
+              <button class="btn btn-outline-success" onclick="showLeaderboard()">🏆 Leaderboard</button>
             </div>
           </div>
         </nav>
@@ -64,47 +44,35 @@
               <div class="mascot-container mb-4">
                 <div class="mascot">🦊</div>
                 <div class="speech-bubble">
-                  <p>
-                    Hi there! I'm Foxy, your math buddy! Ready for some fun math
-                    adventures?
-                  </p>
+                  <p>Hi there! I'm Foxy, your math buddy! Ready for some fun math adventures?</p>
                 </div>
               </div>
-
+              
               <h2 class="welcome-title mb-4">Choose Your Adventure Level!</h2>
-
+              
               <div class="difficulty-selection">
                 <div class="row g-4">
                   <div class="col-md-4">
-                    <div
-                      class="difficulty-card"
-                      onclick="selectDifficulty('easy')"
-                    >
+                    <div class="difficulty-card" onclick="selectDifficulty('easy')">
                       <div class="difficulty-icon">🌟</div>
                       <h3>Easy Peasy</h3>
-                      <p>Numbers 1-10<br />Addition & Subtraction</p>
+                      <p>Numbers 1-10<br>Addition & Subtraction</p>
                       <div class="grade-info">Grades 1-2</div>
                     </div>
                   </div>
                   <div class="col-md-4">
-                    <div
-                      class="difficulty-card"
-                      onclick="selectDifficulty('medium')"
-                    >
+                    <div class="difficulty-card" onclick="selectDifficulty('medium')">
                       <div class="difficulty-icon">🚀</div>
                       <h3>Space Explorer</h3>
-                      <p>Numbers 1-50<br />All Operations</p>
+                      <p>Numbers 1-50<br>All Operations</p>
                       <div class="grade-info">Grades 2-3</div>
                     </div>
                   </div>
                   <div class="col-md-4">
-                    <div
-                      class="difficulty-card"
-                      onclick="selectDifficulty('hard')"
-                    >
+                    <div class="difficulty-card" onclick="selectDifficulty('hard')">
                       <div class="difficulty-icon">🎯</div>
                       <h3>Math Master</h3>
-                      <p>Numbers 1-100<br />All Operations</p>
+                      <p>Numbers 1-100<br>All Operations</p>
                       <div class="grade-info">Grades 3-4</div>
                     </div>
                   </div>
@@ -115,22 +83,13 @@
                 <div class="row justify-content-center">
                   <div class="col-md-6">
                     <div class="form-check form-switch mb-3">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        id="timerToggle"
-                      />
+                      <input class="form-check-input" type="checkbox" id="timerToggle">
                       <label class="form-check-label" for="timerToggle">
                         ⏰ Timed Challenge (60 seconds)
                       </label>
                     </div>
                     <div class="form-check form-switch">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        id="soundToggle"
-                        checked
-                      />
+                      <input class="form-check-input" type="checkbox" id="soundToggle" checked>
                       <label class="form-check-label" for="soundToggle">
                         🔊 Sound Effects
                       </label>
@@ -157,16 +116,11 @@
                   </div>
                   <div class="col-4 text-center">
                     <div class="question-counter">
-                      Question <span id="question-number">1</span> of
-                      <span id="total-questions">10</span>
+                      Question <span id="question-number">1</span> of <span id="total-questions">10</span>
                     </div>
                   </div>
                   <div class="col-4 text-end">
-                    <div
-                      id="timer-display"
-                      class="timer-display"
-                      style="display: none"
-                    >
+                    <div id="timer-display" class="timer-display" style="display: none;">
                       <span class="timer-label">Time:</span>
                       <span id="timer-value" class="timer-value">60</span>s
                     </div>
@@ -177,10 +131,8 @@
               <!-- Question Card -->
               <div class="question-card">
                 <div class="mascot-small">🦊</div>
-                <h3 id="question-text" class="question-text">
-                  Ready for your first question?
-                </h3>
-
+                <h3 id="question-text" class="question-text">Ready for your first question?</h3>
+                
                 <div class="answers-grid" id="answers-container">
                   <!-- Answer buttons will be generated here -->
                 </div>
@@ -192,12 +144,7 @@
               <!-- Progress Bar -->
               <div class="progress-container">
                 <div class="progress">
-                  <div
-                    id="progress-bar"
-                    class="progress-bar"
-                    role="progressbar"
-                    style="width: 0%"
-                  ></div>
+                  <div id="progress-bar" class="progress-bar" role="progressbar" style="width: 0%"></div>
                 </div>
               </div>
             </div>
@@ -212,7 +159,7 @@
                 <div id="results-mascot" class="mascot-large">🦊</div>
                 <h2 id="results-title" class="results-title">Great Job!</h2>
                 <div id="results-message" class="results-message"></div>
-
+                
                 <div class="score-summary">
                   <div class="final-score">
                     <span class="score-label">Final Score:</span>
@@ -220,23 +167,15 @@
                   </div>
                   <div class="accuracy">
                     <span class="accuracy-label">Accuracy:</span>
-                    <span id="accuracy-percentage" class="accuracy-value"
-                      >0%</span
-                    >
+                    <span id="accuracy-percentage" class="accuracy-value">0%</span>
                   </div>
                 </div>
 
                 <div class="action-buttons">
-                  <button
-                    class="btn btn-primary btn-lg me-3"
-                    onclick="restartGame()"
-                  >
+                  <button class="btn btn-primary btn-lg me-3" onclick="restartGame()">
                     🎮 Play Again
                   </button>
-                  <button
-                    class="btn btn-success btn-lg"
-                    onclick="showLeaderboard()"
-                  >
+                  <button class="btn btn-success btn-lg" onclick="showLeaderboard()">
                     🏆 View Leaderboard
                   </button>
                 </div>
@@ -253,21 +192,14 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title">📚 How to Play Math Fun Adventure</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-            ></button>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
           <div class="modal-body">
             <div class="instruction-section">
               <h6>🎯 Game Goal</h6>
-              <p>
-                Solve math problems correctly to earn points and become a Math
-                Master!
-              </p>
+              <p>Solve math problems correctly to earn points and become a Math Master!</p>
             </div>
-
+            
             <div class="instruction-section">
               <h6>🎮 How to Play</h6>
               <ol>
@@ -278,7 +210,7 @@
                 <li>Complete all 10 questions to see your final score</li>
               </ol>
             </div>
-
+            
             <div class="instruction-section">
               <h6>⭐ Scoring</h6>
               <ul>
@@ -288,23 +220,14 @@
                 <li>Bonus points for speed in timed mode!</li>
               </ul>
             </div>
-
+            
             <div class="instruction-section">
               <h6>⏰ Timed Challenge</h6>
-              <p>
-                Turn on the timer for an extra challenge! You'll have 60 seconds
-                to answer as many questions as possible.
-              </p>
+              <p>Turn on the timer for an extra challenge! You'll have 60 seconds to answer as many questions as possible.</p>
             </div>
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-primary"
-              data-bs-dismiss="modal"
-            >
-              Got it! Let's Play!
-            </button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Got it! Let's Play!</button>
           </div>
         </div>
       </div>
@@ -316,33 +239,20 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title">🏆 Leaderboard</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-            ></button>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
           <div class="modal-body">
             <div id="leaderboard-content">
               <!-- Leaderboard will be populated here -->
             </div>
             <div class="text-center mt-3">
-              <button
-                class="btn btn-danger btn-sm"
-                onclick="clearLeaderboard()"
-              >
+              <button class="btn btn-danger btn-sm" onclick="clearLeaderboard()">
                 🗑️ Clear Leaderboard
               </button>
             </div>
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-primary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
@@ -350,17 +260,11 @@
 
     <!-- Sound Effects (Hidden Audio Elements) -->
     <audio id="correctSound" preload="auto">
-      <source
-        src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmwhBjmI0u3PgzUGImmy9N9yKgYsfpv66pJDCw4="
-        type="audio/wav"
-      />
+      <source src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmwhBjmI0u3PgzUGImmy9N9yKgYsfpv66pJDCw4=" type="audio/wav">
     </audio>
-
+    
     <audio id="wrongSound" preload="auto">
-      <source
-        src="data:audio/wav;base64,UklGRmYDAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YUIDAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmwhBjmI0u3PgzUGImmy9N9yKgYsfpv66pJDCw4="
-        type="audio/wav"
-      />
+      <source src="data:audio/wav;base64,UklGRmYDAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YUIDAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmwhBjmI0u3PgzUGImmy9N9yKgYsfpv66pJDCw4=" type="audio/wav">
     </audio>
 
     <!-- Bootstrap and other scripts -->
